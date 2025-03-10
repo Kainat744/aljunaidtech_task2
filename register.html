@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Kashi Traders</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Background */
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2008f3);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Registration Box */
+        .register-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .register-box h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .form-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #bbb;
+            font-size: 1.2rem;
+        }
+
+        .form-control {
+            padding-left: 45px;
+            height: 45px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #00d4ff;
+            box-shadow: 0px 0px 10px rgba(0, 212, 255, 0.5);
+        }
+
+        /* Register Button */
+        .btn-register {
+            background-color: #00d4ff;
+            border-color: #00d4ff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-register:hover {
+            background-color: #a0cc00;
+        }
+
+        /* Social Login */
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-login a {
+            font-size: 24px;
+            margin: 10px;
+            color: #ffffff;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .social-login a:hover {
+            color: #ffcc00;
+            transform: scale(1.2);
+        }
+
+        /* Password Strength */
+        .password-strength {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+        <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-store text-warning"></i> KASHI TRADERS
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-dark px-3 rounded" href="login.html">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section>
+    <!-- Registration Section -->
+    <div class="register-box animate__animated animate__fadeInUp">
+        <h1><i class="fas fa-user-plus"></i> Register</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" class="form-control" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" class="form-control" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-phone"></i>
+                <input type="text" class="form-control" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" class="form-control" required placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="form-control" id="password" required placeholder="Create a password">
+                <small class="password-strength text-light"></small>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="form-control" id="confirm-password" required placeholder="Confirm your password">
+                <small class="text-warning confirm-msg"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-register">Register</button>
+        </form>
+
+        <!-- Social Login -->
+        <div class="social-login">
+            <p>Or sign up with:</p>
+            <a href="#" class="btn"><i class="fab fa-google"></i> Google</a>
+            <a href="#" class="btn"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("password").addEventListener("input", function () {
+            var password = this.value;
+            var strengthText = document.querySelector(".password-strength");
+            if (password.length < 6) {
+                strengthText.innerHTML = "Weak 🔴";
+                strengthText.style.color = "red";
+            } else if (password.length < 10) {
+                strengthText.innerHTML = "Medium 🟡";
+                strengthText.style.color = "orange";
+            } else {
+                strengthText.innerHTML = "Strong 🟢";
+                strengthText.style.color = "green";
+            }
+        });
+
+        document.getElementById("confirm-password").addEventListener("input", function () {
+            var confirmMsg = document.querySelector(".confirm-msg");
+            if (this.value !== document.getElementById("password").value) {
+                confirmMsg.innerHTML = "Passwords do not match!";
+            } else {
+                confirmMsg.innerHTML = "";
+            }
+        });
+    
+    </script>
+    <footer>
+        <div class="foot-panel4">
+    
+            <div class="pages">
+                <a>Condition of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices </a>
+            </div>
+            <div class="copyright">
+                © 1996-2025, Kashitraders.com, Inc. or its affiliates</div>
+      
+            <p>&copy; 2025 Kashi Traders. All rights reserved.</p>
+        </footer>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</section>
+</body>
+</html>
+
+
+
+

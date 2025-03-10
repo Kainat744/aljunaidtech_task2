@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashi Traders | Your Trusted Partner</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1f15ac;
+        }
+        .navbar {
+            background: linear-gradient(45deg, #0056b3, #2a5298);
+            box-shadow: 0 4px 10px rgba(7, 7, 7, 0.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            color: #080808 !important;
+        }
+        .nav-link:hover {
+            color: #ffdd57 !important;
+            transform: scale(1.1);
+        }
+        .hero {
+            height: 80vh;
+            background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        .hero h1, .hero h2 {
+            font-weight: 700;
+        }
+        .features .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+        }
+        .features .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(9, 9, 240, 0.5);
+        }
+        footer {
+            background: linear-gradient(45deg, #050505, #080808);
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-store text-warning"></i> KASHI TRADERS
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-dark px-3 rounded" href="login.html">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Add This CSS to Your style.css -->
+<style>
+/* Navbar Styling */
+
+.navbar {
+    background: linear-gradient(45deg, rgba(0, 86, 179, 0.9), rgba(42, 82, 152, 0.9));
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57 !important;
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+    }
+}
+</style>
+
+
+    <section class="hero text-center text-white">
+        <div class="container">
+            <section class="hero text-center text-white">
+                <div class="container">
+                    <img src="assets/avatar.png" alt="Business " class="rounded-circle mb-3 animate__animated animate__zoomIn" width="120">
+                    <h1 class="animate__animated animate__fadeInDown">
+                        <i class="fas fa-store"></i> Welcome to <span class="text-warning">Kashi Traders</span>
+                    </h1>
+                    <h2 class="animate__animated animate__fadeInUp animate__delay-1s">
+                        <i class="fas fa-handshake"></i> Your Trusted Trading Partner
+                    </h2>
+                    <h2 class="animate__animated animate__fadeInUp animate__delay-2s">
+                        <i class="fas fa-check-circle text-success"></i> Best Choice for Quality & Reliability
+                    </h2>
+                    <h2 class="animate__animated animate__fadeInUp animate__delay-3s">
+                        <i class="fas fa-shield-alt text-primary"></i> Secure Your Future Today
+                    </h2>
+                    <div class="sticker-container text-center mt-4">
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            
+        </div>
+    </section>
+
+    <section class="our-mission py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Our Mission</h2>
+            <p>We aim to provide reliable and cost-effective trading solutions with integrity and excellence.</p>
+        </div>
+    </section>
+
+    <section class="testimonials py-5 text-center">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <p>"Kashi Traders provided outstanding service and timely delivery!"</p>
+                        <strong>- John Doe</strong>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 shadow-sm">
+                        <p>"Highly professional and best market prices. Highly recommended!"</p>
+                        <strong>- Sarah Lee</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section  class="contact bg-dark text-white text-center py-5">
+        <div  class="container">
+            <h2>Get in Touch</h2>
+            <p>Email us at <a href="mailto:info@kashitraders.com" class="text-warning">info@kashitraders.com</a></p>
+        </div>
+    </section>
+    <footer>
+        <div class="foot-panel4">
+    
+            <div class="pages">
+                <a>Condition of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices </a>
+            </div>
+            <div class="copyright">
+                © 1996-2025, Kashitraders.com, Inc. or its affiliates</div>
+      
+            <p>&copy; 2025 Kashi Traders. All rights reserved.</p>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

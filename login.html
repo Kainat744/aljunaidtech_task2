@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kashi Traders</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0a0a, #1e3c72);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-box h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .form-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+            font-size: 1.2rem;
+        }
+
+        .form-control {
+            padding-left: 40px;
+            height: 45px;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #3498db;
+            box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .btn-login {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 12px;
+            width: 100%;
+            color: #fff;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .btn-login:hover {
+            background: linear-gradient(135deg, #2980b9, #1e3c72);
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+        <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-store text-warning"></i> KASHI TRADERS
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-dark px-3 rounded" href="login.html">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="login-box">
+        <h1><i class="fas fa-user-lock"></i> Login</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" class="form-control" required placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="form-control" required placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Login</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="foot-panel4">
+    
+            <div class="pages">
+                <a>Condition of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices </a>
+            </div>
+            <div class="copyright">
+                © 1996-2025, Kashitraders.com, Inc. or its affiliates</div>
+      
+            <p>&copy; 2025 Kashi Traders. All rights reserved.</p>
+        </footer>
+</body>
+</html>

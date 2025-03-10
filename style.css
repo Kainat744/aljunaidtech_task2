@@ -1,0 +1,363 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(45deg, rgba(0, 86, 179, 0.9), rgba(42, 82, 152, 0.9));
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57 !important;
+    transform: scale(1.1);
+}
+
+/* Login Button */
+.navbar-nav .btn-warning {
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .btn-warning:hover {
+    background-color: #e0c130;
+    color: rgb(27, 6, 219);
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #fff9f9;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: #4400ff;
+    color: #4400ff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    background: #0056b3;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #004080;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Products Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(9, 6, 190, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #020202;
+    color: rgb(5, 5, 5);
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgb(53, 6, 224) !important;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8b400 !important;
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #0723c4, #0b07db);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+header .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+header .btn:hover {
+    background-color: #f8b400;
+    color: black;
+}
+
+/* Feature Section */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+/* General body styling */
+body {
+    font-family: 'Poppins', Tahoma, sans-serif, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Soft background color */
+}
+
+/* Header Styling */
+header {
+    background-color: #0f0fe0; /* Dark Blue background */
+    color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(9, 12, 172, 0.1);
+}
+
+/* Navigation Menu Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E74C3C; /* Red on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 3rem;
+    background-color: #fff;
+    box-shadow: 0 8px 16px,#2b07f8(7, 37, 172, 0.1);
+    margin: 2rem auto;
+    border-radius: 8px;
+    max-width: 1100px;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #2b07f8, #1a31fd, #0642e6);
+    color: white;
+    padding: 4rem 0;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2b07f8;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+.foot-panel4 {
+    background-color: #0f1111 ;
+    color: white;
+    height: 100px;
+    font-size: 0.7rem;
+   text-align: center;
+}.foot-panel3{
+   background-color:#222f3d;
+   border-top: 0.5px solid white;
+   height: 70px;   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
